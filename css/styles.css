@@ -236,11 +236,11 @@ sup {
 }
 
 a {
-  color: #1abc9c;
+  color: #ffc107;
   text-decoration: underline;
 }
 a:hover {
-  color: #15967d;
+  color: #e3a905;
 }
 
 a:not([href]):not([class]), a:not([href]):not([class]):hover {
@@ -11397,11 +11397,11 @@ html {
   }
   #mainNav .navbar-nav > li.nav-item > a.nav-link.active {
     color: #fff;
-    background: #f6c20a;
+    background: #ffc107;
   }
   #mainNav .navbar-nav > li.nav-item > a.nav-link.active:active, #mainNav .navbar-nav > li.nav-item > a.nav-link.active:focus, #mainNav .navbar-nav > li.nav-item > a.nav-link.active:hover {
     color: #fff;
-    background: #f6c20a;
+    background: #ffc107;
   }
 
   #mainNav.navbar-shrink {
