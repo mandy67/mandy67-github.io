@@ -8,24 +8,18 @@
             background: #fffbcb;background-size: cover;
         }
         .box {
-            width: 50px;
-            height: 50px;
+            width: 200px;
+            height: 200px;
             border-radius: 25%;
             background-color: #a25c5c;
             animation: demo 5s;
             animation-delay: 1s;
             animation-iteration-count: infinite;
-            animation-direction: alternate;
             position: relative;
+
         }
 
         @keyframes demo {
-            from {
-                left: 0px
-            }
-            to {
-                left: 1370px
-            }
             0% {
                 background-color: #9d5a5b;
             }
@@ -33,7 +27,7 @@
                 background-color: #da903b;
             }
             50% {
-                background-color: #839d5b;
+                background-color: #839d5b;border-radius: 50%;left: 50px;
             }
             75% {
                 background-color: #5ba9b7;
@@ -42,33 +36,13 @@
                 background-color: #8b60b7;
             }
         }
-        .button {
-            padding: 15px 25px;
-            font-size: 24px;
-            text-align: center;
-            cursor: pointer;
-            outline: none;
-            color: #fff;
-            background-color: #04AA6D;
-            border: none;
-            border-radius: 15px;
-            box-shadow: 0 9px #999;
-        }
-
-        .button:hover {background-color: #3e8e41}
-
-        .button:active {
-            background-color: #3e8e41;
-            box-shadow: 0 5px #666;
-            transform: translateY(4px);
-        }
     </style>
 </head>
 <body>
-<div class="bg-secondary">
-    <div class="box"></div>
-    <img src="assets/img/train.jpg"width="40%"height="40%" style="display: block;margin: auto; border-radius: 10%">
+<div class="container">
+    <div class="bg-secondary">
+      <div class="box"></div>
+    </div>
 </div>
-<button class="button">BACK</button>
 </body>
 </html>
