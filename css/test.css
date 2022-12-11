@@ -51,12 +51,45 @@
 .section-heading {
     font-size: 3rem;
     line-height: 6rem;
-    font-family:jf-openhuninn;
+
 }
 .text-drgr{
     color: #5d743c;
 }
-@font-face {
-    font-family: jf-openhuninn;
-    src:url("");
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&family=Noto+Sans+TC:wght@500&display=swap');
+.font-cn{
+    font-family: 'Noto Sans TC', sans-serif;
+}
+.font-en{
+    font-family: 'Concert One', cursive;
+}
+.divider-custom {
+    margin: 1.25rem 0 1.5rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.divider-custom .divider-custom-line {
+    width: 100%;
+    max-width: 8rem;
+    height: 0.5rem;
+    background-color: #5c713d;
+    border-radius: 1rem;
+    border-color: #5a6f3d;
+}
+.divider-custom .divider-custom-line:first-child {
+    margin-right: 1rem;
+}
+.divider-custom .divider-custom-line:last-child {
+    margin-left: 1rem;
+}
+.footer {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    background-color: #5c713d;
+    color: #fff;
+}
+.copyright {
+    background-color: #38502c;
 }
