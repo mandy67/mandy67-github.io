@@ -15,17 +15,36 @@
     width: 200px;
     height: 200px;
     position: relative;
+    margin: auto;
 }
 .bubble{
     width: 100%;height: 100%;
     background: repeating-radial-gradient(circle at 75% 30%,#ffffff 5px, #c05b4f 8%,
     #5b5b5b 60%,#c05b4f 100%);
     border-radius: 50%;
+    box-shadow: inset 0 0 20px #fff,
+    inset 10px 0 46px #eaf5fc,
+    inset -20px -60px 100px #f9f6de,
+    inset 0 50px 140px #f9f6de,
+    0 0 90px #ffffff;
+    animation: bubble 4s ease-in-out infinite;
+}
+.shadowbu{
+    background-color: rgba(0,0,0,0.15);
+    width: 150px;height: 40px;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    margin-left: -75px;
+    bottom: -50px;
+    filter: blur(1px);
+    animation: shadowbbu 4s ease-in-out infinite;
 }
 header{
     display: flex;
     justify-content: center;
     align-content: center;
+    padding-bottom: 4rem;
 }
 @keyframes demo {
     from{left: 0px}
@@ -46,6 +65,23 @@ header{
         background-color: #8b60b7;
     }
 }
+@keyframes bubble {
+    0%,100%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-80px);
+    }
+}
+@keyframes shadowbbu {
+    0%,100%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(0.5);
+    }
+}
+
 .navbar-brand {
     padding-top: 0.3125rem;
     padding-bottom: 0.3125rem;
